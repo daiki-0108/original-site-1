@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hyogo trip</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Lightbox-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vue-image-lightbox@6.4.0/dist/vue-image-lightbox.min.css">
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="../animate.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    About Me
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">top</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#control-profile">profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#control-skills">skill</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#control-deliverables">deliverables</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#control-portfolio">portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="main">
+            <div id="main-image">
+                <img src="../image/about-me/team.JPG" alt="メイン画像">
+                <blockquote class="catch">
+                    努力すれば報われる？<br>そうじゃないだろう<br>報われるまで努力するんだ<br><span>リオネル・メッシ</span>
+                </blockquote>
+            </div>
+        </div>
+
+        <div class="message animated">
+            <p id="num1">私はこの言葉から、</p>
+            <p id="num2"><span>「努力」</span>についての考え方を変えられました。</p>
+            <p id="num3"><span>「努力」</span>をすれば必ず結果が出るのではなく、</p>
+            <p id="num4">結果が出て、初めて<span>「努力」</span>と呼べるのだと。</p>
+        </div>
+
+        <div id="control-profile" class="control"></div>
+        <div id="my-profile">
+            <img id="my-photo" src="../image/about-me/myPhoto.jpg" class="animated">
+            <div id="overview" class="animated">
+                <h4>森 大樹</h4>
+                <div id="university">
+                    <h5>大学</h5>
+                    <p>近畿大学　総合社会学部　環境・まちづくり系専攻</p>
+                    <p id="graduate">(2024年3月卒業見込み)</p>
+                </div>
+                <div id="high-school">
+                    <h5>高校</h5>
+                    <p>報徳学園高等学校</p>
+                    <p>(サッカー部所属)</p>
+                </div>
+                <div id="from">
+                    <h5>出身</h5>
+                    <p>兵庫県</p>
+                </div>
+                <div id="hobby">
+                    <h5>趣味</h5>
+                    <p>サッカー・旅行</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="personality animated">
+            <h5>私の強み</h5>
+            <i class="far fa-laugh-beam fa-3x" id="icon"></i>
+            <div>
+                <p class="animated">　私の強みは目標を設定し、目標達成に向かって計画性をもって行動できる「実行力」があることです。<br>
+                    　例えば、私がIT業界に興味を持ち就職を考え始めた際に、私自身ITについての知識が足りていないと感じました。そのため、まず初めにITパスポートとMOS
+                    Excelの学習を始めました。早めの段階で試験日を設定し、そこから学習計画を立て試験に挑みました。そして、どちらも一発合格することが出来ました。<br>
+                    　その後はエンジニアについて興味を持ったため、プログラミング力を身に着けるためにプログラミングスクールを利用しました。そして、スクールでの課題とは別に、オリジナルのWebサイトを作成しました。<br>
+                    　そのWebサイトは、兵庫県の観光マップサイトであり、おすすめの観光スポットを紹介しつつ、旅行プランも作成できるというものを作成しました。作成する際は、今公開されている観光サイトの問題点を考え、試行錯誤しながら作成しました。<br>
+                    　実際に大学の友人4人に、私の作成したサイトを利用してもらい、プランを作成し旅行に行ってもらえました。そして、その友人からは「サイトが分かりやすく、プランを作成しやすかった」や「サイトのおかげで予定通りにスポットを回ることが出来て、良い旅行になった」などの言葉をいただくことが出来ました。
+                </p>
+            </div>
+        </div>
+
+        <div id="control-skills" class="control"></div>
+        <div id="skills">
+            <h4 class="animated">Skill</h4>
+            <div class="language">
+                <div class="separate-skill animated" v-for="skill in skills">
+                    <span><img v-bind:src="skill.src"></span>
+                    <h5>{{skill.name}}</h5>
+                    <p>{{skill.content}}</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="Deliverables">
+            <div id="control-deliverables" class="control"></div>
+            <h4 class="animated">Deliverables</h4>
+            <div class="separate animated" id="license-area">
+                <h5>資格</h5>
+                <i class="far fa-id-badge fa-3x"></i>
+                <div id="license">
+                    <p>普通自動車第一種免許</p>
+                    <p>Microsoft Office Specialist Excel 2016 </p>
+                    <p>ITパスポート</p>
+                </div>
+            </div>
+
+            <div id="control-gis" class="control"></div>
+            <div class="separate" id="gis">
+                <h5 class="animated">大学の成果物</h5>
+                <ul class="university">
+                    <li class="animated" v-for="(image,index) in images" v-on:click="show(index)">
+                        <img v-bind:src="image.thumb" v-bind:alt="image.name">
+                    </li>
+                </ul>
+                <light-box ref="lightbox" :images="images" :show-light-box="false"></light-box>
+                <div class="content animated">
+                    <h6>ArcGIS</h6>
+                    <p>
+                        　私たちの学部では、全国的にも珍しいArcGISを用いた実習があります。<br>　ArcGIS
+                        は、地理情報を収集、整理、管理、解析、伝達、および配布するための包括的なシステムであり、行政、企業、科学、教育、メディアなどの各分野で地理情報を利用する目的で、世界中の人々に使用されています。<br>　私たちの学部では、このArcGISを用いて地理情報を取り扱い、様々な問題について分析いたしました。例えば上記の地図のように、私は2015年国勢調査や将来推計人口データを資料に、GIS(地理情報システム)を用いて、日本における年少者率と高齢者率を地図化しました。そして、全国レベル・県レベル・市レベルにおいて高齢者率と年少者率にどのような地域差がみられるのかを明らかにし、その原因について分析いたしました。<br>　他にも、ハザードマップの作成や、1事業所当たりの従業員者数割合などを地図化いたしました。地図の作成にはArcMap（ArcGIS
+                        で使用される主要なアプリケーション）を用いました。
+                    </p>
+                </div>
+            </div>
+
+            <div id="control-portfolio" class="control"></div>
+            <h4 class="animated">Portfolio</h4>
+            <div class="separate animated">
+                <ul id="portfolio-list">
+                    <li class="img bg animated" v-for="portfolio in portfolioes">
+                        <a v-bind:href="portfolio.href" target="_blank"><img v-bind:src="portfolio.src"
+                                v-bind:alt="portfolio.name"></a>
+                    </li>
+                </ul>
+                <div class="content animated">
+                    <h6>観光プラン作成サイト</h6>
+                    <p>
+                        　実際に現在公開されている観光サイトを見ると、よくあるのが「○○市の観光スポットランキング」や、「○○市の観光スポット10選」です。<br>
+                        　私は旅行が好きで、よく旅行プランを考える際にはこのようなサイトを利用し、行先を調べることがあるのですが、そのたびに不便だと感じることが良くありました。それは、「紹介されている観光地の位置関係が、分かりにくい」という点です。<br>
+                        　観光プランを考える際に、観光スポットから観光スポットまでの距離や所要時間などをほとんどの人が考えると思います。しかし、現在公開されている観光サイトの多くは、住所が文字で表示されているだけのものが多く、観光スポットごとの位置関係が視覚的に理解しづらいという問題点がありました。<br>
+                        　そのため、私は兵庫県の観光スポットを紹介するとともに、それぞれの位置関係をGoogle Maps APIを利用して視覚的に表現し、旅行プランを作成できるサイトを作成しました。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <nav class="footer">
+            <ul class="nav">
+                <li><a href="#control-profile">profile</a></li>
+                <li><a href="#control-skills">skill</a></li>
+                <li><a href="#control-deliverables">deliverables</a></li>
+                <li><a href="#control-portfolio">portfolio</a></li>
+            </ul>
+        </nav>
+
+        <div class="outside">
+            <nav class="list" id="outside-portfolio">
+                <h5>ポートフォリオ</h5>
+                <ul>
+                    <li><a href="../trip-exp/index.html">サイト説明</a></li>
+                    <li><a href="../trip-spot/index.html">観光スポット</a></li>
+                    <li><a href="../trip-plan/index.html">プラン作成</a></li>
+                </ul>
+            </nav>
+
+            <nav class="list">
+                <h5>大学での成果物</h5>
+                <ul>
+                    <li><a href="#control-gis">ArcGIS</a></li>
+                </ul>
+            </nav>
+            <nav class="list" id="logo">
+                <h5>お問い合わせ</h5>
+                <ul>
+                    <li><img src="../image/logo/gmail.png">daik.m.20020108@gmail.com</li>
+                    <li>
+                        <a href="https://twitter.com/messages/compose?recipient_id=1531623954657742849&ref_src=twsrc%5Etfw"
+                            class="twitter-dm-button" data-screen-name="daiki_20020108" data-show-count="false">
+                            <img src="../image/logo/twitter.png">
+                        </a>@daiki_20020108
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy">
+            <p>&copy; 2022 dai-portfolio</p>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.8.17/jquery-ui.min.js"></script>
+
+    <!-- waypoints -->
+    <script src="../jquery.waypoints.min.js"></script>
+
+    <!--Lightbox-->
+    <script src="https://cdn.jsdelivr.net/npm/vue-image-lightbox@6.4.0/dist/vue-image-lightbox.min.js"></script>
+    <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
+
+    <!--bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!--Font Awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js"></script>
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!--about.js-->
+    <script src="about.js"></script>
+</body>
+
+</html>
