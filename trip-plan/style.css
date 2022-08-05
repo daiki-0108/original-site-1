@@ -1,0 +1,781 @@
+@charset "UTF-8";
+
+/*==================body=========================*/
+body {
+    color: #000;
+    background-image: url("../image/logo/back.jpg");
+    background-size: contain;
+    font-family: "Yu Mincho";
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/*========================ヘッダー========================*/
+header {
+    width: 100%;
+    border-bottom: 2px solid #C0C2C2;
+}
+
+.bg-light {
+    background-color: #F6F6F3 !important;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.navbar-brand span img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#navbarNav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.navbar-nav {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.navbar-toggler :hover {
+    font-weight: bold;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nav-item a:hover {
+    font-weight: bold;
+    color: #0033cc;
+}
+
+
+/*===================wrapper===================*/
+.animated {
+    opacity: 0;
+    animation-duration: 1.3s;
+}
+
+.catch {
+    opacity: 0;
+    animation-duration: 2.5s;
+}
+
+.main {
+    position: relative;
+}
+
+#main-image p {
+    text-align: center;
+    width: 84%;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(105, 105, 105, 0.5);
+    text-shadow: 0 0 2px;
+}
+
+#main-image img {
+    width: 100%;
+    height: 400px;
+}
+
+#maps-explanation {
+    margin: 150px 0 150px 0;
+}
+
+#maps-explanation h3 {
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 100px 0 60px 0;
+}
+
+#maps-explanation ol {
+    width: 80%;
+    margin: 0px auto;
+    counter-reset: list;
+    list-style-type: none;
+    padding: 0;
+}
+
+#maps-explanation ol li {
+    font-size: 1.2rem;
+    position: relative;
+    line-height: 30px;
+    margin: 50px 0 10px 40px;
+    border-bottom: solid 1px #32cd32;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#maps-explanation ol li:before {
+    counter-increment: list;
+    content: counter(list);
+    position: absolute;
+    left: -30px;
+    width: 30px;
+    height: 32px;
+    background: #32cd32;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.make-plan {
+    height: 1500px;
+    margin-bottom: 100px;
+}
+
+
+#map {
+    height: 600px;
+    width: 100%;
+}
+
+.side-bar {
+    margin: 50px 20px 0 20px;
+    font-size: 0.85rem;
+}
+
+.side-bar span {
+    font-size: 0.7rem;
+    float: right;
+    margin-top: 15px;
+    padding-left: 10px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+#selected,
+#recommended {
+    border: 1px solid #333333;
+    border-radius: 60px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px 0 20px 0;
+    width: 94%;
+    background-color: #ffffff;
+}
+
+#selected-spots {
+    width: 100%;
+    height: 50%;
+    margin-top: 50px;
+}
+
+#selected-spots .total {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#selected-spots .info-totalTime,
+#selected-spots .info-totalDistance {
+    margin: 10px 30px 0 0;
+    height: 40px;
+    padding: 10px 10px;
+    font-weight: bold;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#selected-spots h4 {
+    font-weight: bold;
+    padding: 40px 0 10px 20px;
+    width: 35%;
+    box-sizing: border-box;
+}
+
+.no-select,
+.lack-select {
+    display: none;
+    width: 60%;
+    text-align: right;
+    margin: 44px 10px 0 0 !important;
+    color: red;
+    font-weight: bold;
+    border: none;
+    background-color: transparent !important;
+}
+
+/*---------------button--------------*/
+.submit-btn {
+    font-size: 14px;
+    float: right;
+    margin: 20px 25px 0 0px;
+    cursor: pointer;
+    -webkit-transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    -o-transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    background-color: #32CD32;
+    border: 2px solid #2e8b57;
+    border-radius: 60px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    padding: 5px 10px;
+    text-align: center;
+    -webkit-box-shadow: 0 4px 0 #2e8b57;
+    box-shadow: 0 4px 0 #2e8b57;
+}
+
+.submit-btn:hover {
+    -webkit-transform: translateY(4px);
+    -ms-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#recommended-spots {
+    margin-top: 80px;
+    width: 100%;
+    height: 50%;
+}
+
+#recommended-spots h4 {
+    font-weight: bold;
+    padding: 20px 0 10px 20px;
+}
+
+/*-------------sortable-------------*/
+.side-bar li {
+    list-style: none;
+    text-align: left;
+    width: 86%;
+    border-bottom: thin solid #C0C2C2;
+    padding: 5px 0 5px 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor: move;
+    margin: 5px auto;
+    height: 35px;
+    -webkit-transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    -o-transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    letter-spacing: 0.06em;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+
+.side-bar li::before {
+    background: #00A040;
+    content: '';
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    -webkit-transform-origin: right top;
+    -ms-transform-origin: right top;
+    transform-origin: right top;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
+}
+
+.side-bar li:hover::before {
+    -webkit-transform-origin: left top;
+    -ms-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.sortable-chosen {
+    background-color: #90ee90;
+    border-radius: 60px;
+}
+
+
+/*--------slider--------------*/
+.slider {
+    /*横幅94%で左右に余白を持たせて中央寄せ*/
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+}
+
+.slider img {
+    height: 180px;
+    width: 100%;
+    /*スライダー内の画像を横幅100%に*/
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+.slider li {
+    margin: 0 1px;
+    width: 240px;
+}
+
+.slide-carousel p {
+    font-size: 1.25rem;
+    text-align: center;
+    margin: -130px 0 0 0;
+    line-height: 0.95em;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0 0 0.2em black;
+}
+
+
+/*=========================フッター=============================*/
+footer {
+    margin-top: 200px;
+    background-color: #F6F6F3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 3px dotted #C0C2C2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    font-weight: bold;
+    color: #333;
+}
+
+footer .navbar-brand {
+    padding-top: 50px;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer .navbar-brand:hover {
+    transform: none;
+}
+
+footer .navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.global {
+    padding-top: 50px;
+}
+
+.global ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.global ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.global ul li:last-child {
+    margin: 0;
+}
+
+.global ul li+li::before {
+    content: "/";
+    padding-right: 10px;
+}
+
+
+.outside {
+    margin: 100px auto 0;
+}
+
+.outside .list {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.outside .list h5 {
+    padding-top: 30px;
+    font-size: 1.25rem;
+    border-top: 2px solid #4AA300;
+    margin: 0 90px 30px;
+}
+
+.outside .list ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.outside .list li {
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.outside .list li img {
+    width: 30px;
+    height: 30px;
+}
+
+.outside #logo ul li {
+    margin-bottom: 30px;
+}
+
+.outside #logo ul li:last-child {
+    margin: 0;
+}
+
+.copy {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+
+/*===========レスポンシブデザイン==============*/
+@media (min-width :500px) {
+    #main-image img {
+        height: 500px;
+    }
+
+    #main-image p {
+        font-size: 2.5rem;
+    }
+
+    .side-bar {
+        font-size: 1rem;
+    }
+
+    .side-bar span {
+        font-size: 0.9rem;
+    }
+
+    /*footer*/
+    .outside #outside-portfolio ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .outside #outside-portfolio ul li {
+        margin-right: 60px;
+    }
+
+    .outside #outside-portfolio ul li:last-child {
+        margin: 0;
+    }
+
+    .outside #logo ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .outside #logo ul li {
+        margin-right: 60px;
+    }
+
+    .outside #logo ul li:last-child {
+        margin: 0;
+    }
+}
+
+@media (min-width :790px) {
+
+    /*ヘッダー*/
+
+    .navbar-brand {
+        margin-left: 20px;
+        font-size: 1.75rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 20px;
+        font-size: 1.75rem;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+
+    /*wrapper*/
+    #main-image p {
+        font-size: 3rem;
+        letter-spacing: 20px;
+    }
+
+    #main-image img {
+        height: 600px;
+    }
+
+
+    #maps-explanation {
+        margin: 200px 0 200px 0;
+    }
+
+    #maps-explanation ol li {
+        font-size: 1.25rem;
+        margin-bottom: 50px;
+    }
+
+    .make-plan {
+        height: 1250px;
+        margin-bottom: 150px;
+    }
+
+    #map {
+        margin-top: 0;
+        width: 100%;
+        height: 600px;
+    }
+
+    .side-bar {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        height: 650px;
+        margin-top: 0;
+    }
+
+    .side-bar li {
+        height: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    #selected-spots {
+        margin-top: 0;
+        height: 100%;
+    }
+
+    #recommended-spots {
+        margin-top: 0;
+        height: 100%;
+    }
+
+    #recommended-spots h4,
+    #selected-spots h4 {
+        padding-top: 70px;
+    }
+
+    .no-select,
+    .lack-select {
+        margin: 66px 10px 0 0 !important;
+    }
+}
+
+@media (min-width :1000px) {
+
+    /*ヘッダー*/
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    /*wrapper*/
+    #main-image p {
+        font-size: 3.5rem;
+        letter-spacing: 20px;
+    }
+
+
+    #main-image img {
+        height: 800px;
+    }
+
+    .make-plan {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse;
+        height: 950px;
+        margin-bottom: 200px;
+    }
+
+    .map-area {
+        display: inline-block;
+        width: 60%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #map {
+        height: 100%;
+    }
+
+    .side-bar {
+        display: inline-block;
+        width: 40%;
+        height: 100%;
+        margin: 0;
+    }
+
+    #selected-spots {
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    #selected-spots,
+    #recommended-spots {
+        height: auto;
+    }
+
+    #selected-spots h4 {
+        padding-top: 20px;
+    }
+
+    .no-select,
+    .lack-select {
+        margin: 25px 20px 0 0 !important;
+    }
+
+    /*フッター*/
+    .global ul li {
+        margin-right: 40px;
+    }
+
+    .global ul li+li::before {
+        padding-right: 40px;
+    }
+
+    .outside {
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .outside .list {
+        text-align: center;
+        margin: 0;
+        margin-right: 150px;
+    }
+
+    .outside .list:last-child {
+        margin: 0;
+    }
+
+    .outside .list h5 {
+        padding: 5px 10px;
+        border-top: none;
+        border-left: 10px solid #4AA300;
+        margin: 0 0 30px 0;
+    }
+
+    .outside .list ul {
+        display: block;
+    }
+
+    .outside .list li {
+        padding-bottom: 30px;
+        font-size: 1rem;
+    }
+
+    .outside .list li:first-child {
+        padding-top: 20px;
+    }
+
+    .outside #logo ul {
+        display: block;
+    }
+
+    .outside #logo ul li {
+        margin-right: 0;
+        padding-left: 20px;
+        margin-bottom: 0;
+        text-align: left;
+
+    }
+
+    .outside #outside-portfolio ul {
+        display: block;
+        justify-content: center;
+    }
+
+    .outside #outside-portfolio ul li {
+        margin-right: 0;
+    }
+}
+
+@media (min-width :1300px) {
+    .nav-item {
+        padding-left: 30px;
+    }
+
+    #main-image img {
+        height: 900px;
+    }
+
+
+    #main-image p {
+        font-size: 5rem;
+        letter-spacing: 30px;
+    }
+
+    .side-bar {
+        font-size: 1.1rem;
+    }
+
+    .side-bar span {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width :1500px) {
+    .nav-item {
+        padding-left: 60px;
+    }
+
+    .slider img {
+        height: 250px;
+    }
+
+    /*footer*/
+    .outside .list {
+        margin-right: 200px;
+    }
+}
