@@ -1,0 +1,863 @@
+@charset "UTF-8";
+
+/*==================body=========================*/
+body {
+    color: #000;
+    background-image: url("../image/logo/back.jpg");
+    background-size: contain;
+    font-family: "Yu Mincho";
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/*========================ヘッダー========================*/
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    border-bottom: 2px solid #C0C2C2;
+}
+
+.bg-light {
+    background-color: #F6F6F3 !important;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.navbar-brand span img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+#navbarNav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.navbar-nav {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.navbar-toggler :hover {
+    font-weight: bold;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.nav-item a:hover {
+    font-weight: bold;
+    color: #0033cc;
+}
+
+/*=============================wrapper=================================*/
+.in,
+.up,
+.left,
+.right {
+    /*fadeInUpアニメーション*/
+    opacity: 0;
+    animation-duration: 1.3s;
+}
+
+.main img {
+    margin-top: 87px;
+    width: 100%;
+    height: 400px;
+}
+
+.background h5,
+.outline h5 {
+    font-size: 1.5rem;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    line-height: 40px;
+    margin: 100px auto 150px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.background-exp {
+    margin: 0 auto;
+    border-top: 2px solid #009900;
+    padding: 50px 30px;
+    width: 90%;
+    max-width: 1000px;
+    box-sizing: border-box;
+    line-height: 2rem;
+}
+
+.fence {
+    margin: 100px 0 200px 0;
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+
+.fence .img1 {
+    width: 70%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.fence .img2 {
+    width: 54%;
+    height: 200px;
+    top: 150px;
+    right: 0;
+    position: absolute;
+}
+
+
+.fence .img3 {
+    width: 70%;
+    height: 250px;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.fence .img4 {
+    width: 54%;
+    height: 200px;
+    top: 150px;
+    left: 0;
+    position: absolute;
+}
+
+.intro-page {
+    border-top: 2px solid #009900;
+    width: 90%;
+    margin: 0 auto;
+    padding: 50px 10px 0 10px;
+    box-sizing: border-box;
+}
+
+.tabs-menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* タブの基本スタイル */
+.tabs-content .hidden {
+    display: none;
+}
+
+.tabs-menu li {
+    float: left;
+    margin-right: 4px;
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    transition: all .15s;
+}
+
+.tabs-menu a {
+    display: block;
+    padding: 10px 10px;
+    color: #006400;
+    text-decoration: none;
+}
+
+/* 非選択のタブにマウスカーソルを乗せたら色を変える */
+.tabs-menu li:not(.active):hover {
+    border-color: #f0f0f0 #f0f0f0 #999;
+    background-color: #f0f0f0;
+}
+
+.tabs-menu .active {
+    border-color: #999 #999 transparent #999;
+    background-color: #fff;
+}
+
+.tabs-menu .active a {
+    color: #3F4548;
+}
+
+.tabs-content {
+    clear: both;
+    border: 1px solid #999;
+    border-radius: 0 4px 4px 4px;
+    padding: 10px;
+    background-color: #FFFFFF;
+}
+
+/* 各タブのコンテンツはデフォルトで非表示 */
+.tabs-content div {
+    margin: 60px 20px 30px;
+    padding: 0 10px;
+}
+
+.tabs-content .page3 {
+    text-align: left;
+    line-height: 2rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow-x: none;
+    overflow-y: scroll;
+    padding: 10px;
+    border: 1px solid #C0C2C2;
+}
+
+.tabs-content p {
+    font-size: 1rem;
+    line-height: 2.0;
+}
+
+.tabs-content a {
+    height: 350px;
+}
+
+.tabs-content img {
+    width: 100%;
+    height: 350px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.tabs-content img:hover {
+    transform: scale(1.01);
+}
+
+.used-skill h5 {
+    font-size: 1.5rem;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    line-height: 40px;
+    margin: 150px auto 100px;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.skill-exp {
+    margin: 0 auto;
+    border-top: 2px solid #009900;
+    padding: 80px 0 30px;
+    width: 80%;
+    max-width: 1400px;
+    box-sizing: border-box;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.separate {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    background-color: #FBFBFB;
+    border: 1px solid #C0C2C2;
+    -webkit-box-shadow: 8px 8px 10px gray;
+    box-shadow: 8px 8px 10px gray;
+}
+
+.separate h6 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 40px 0 20px;
+}
+
+.separate ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+}
+
+.separate ul li {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#language li,
+#framework li {
+    margin-bottom: 15px;
+}
+
+#api li,
+#skill li {
+    margin-bottom: 20px;
+}
+
+.separate span {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.separate img {
+    width: 40px;
+    height: 40px;
+}
+
+#api img {
+    margin-top: 20px;
+}
+
+
+
+/*=========================フッター=============================*/
+footer {
+    margin-top: 250px;
+    background-color: #F6F6F3;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-top: 3px dotted #C0C2C2;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    font-weight: bold;
+    color: #333;
+}
+
+footer .navbar-brand {
+    padding-top: 50px;
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer .navbar-brand:hover {
+    transform: none;
+}
+
+footer .navbar-brand img {
+    width: 30px;
+    height: 30px;
+}
+
+.global {
+    padding-top: 50px;
+}
+
+.global ul {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+}
+
+.global ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.global ul li:last-child {
+    margin: 0;
+}
+
+.global ul li+li::before {
+    content: "/";
+    padding-right: 10px;
+}
+
+
+.outside {
+    margin: 100px auto 0;
+}
+
+.outside .list {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.outside .list h5 {
+    padding-top: 30px;
+    font-size: 1.25rem;
+    border-top: 2px solid #4AA300;
+    margin: 0 90px 30px;
+}
+
+.outside .list ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.outside .list li {
+    list-style: none;
+    padding-bottom: 10px;
+    font-size: 0.9rem;
+}
+
+.outside .list li img {
+    width: 30px;
+    height: 30px;
+}
+
+.outside #logo ul li {
+    margin-bottom: 30px;
+}
+
+.outside #logo ul li:last-child {
+    margin: 0;
+}
+
+.copy {
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+/*=====================レスポンシブデザイン===========================*/
+
+@media (min-width :550px) {
+    .main img {
+        height: 500px;
+    }
+
+
+    .fence {
+        height: 450px;
+    }
+
+
+    .fence .img1,
+    .fence .img3 {
+        height: 300px;
+    }
+
+    .fence .img2,
+    .fence .img4 {
+        height: 250px;
+        top: 200px;
+    }
+
+    .tabs-menu {
+        font-size: 1rem;
+    }
+
+    .tabs-menu a {
+        padding: 10px 20px;
+    }
+
+    .tabs-content a {
+        height: 400px;
+    }
+
+    .tabs-content img {
+        height: 400px;
+    }
+
+    .separate {
+        width: 60%;
+    }
+
+
+    #framework,
+    #skill {
+        margin-left: auto;
+    }
+
+}
+
+@media (min-width :750px) {
+    /*----------------ヘッダー*/
+
+    .navbar-brand {
+        margin-left: 20px;
+        font-size: 1.75rem;
+    }
+
+    .navbar-toggler {
+        margin-right: 20px;
+        font-size: 1.75rem;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 1.1rem;
+        margin-left: 20px;
+    }
+
+    /*------wrapper--------*/
+    .main img {
+        height: 700px;
+    }
+
+    .fence {
+        height: 600px;
+    }
+
+
+    .fence .img1,
+    .fence .img3 {
+        height: 400px;
+    }
+
+    .fence .img2,
+    .fence .img4 {
+        height: 350px;
+        top: 250px;
+    }
+
+    .tabs-menu {
+        font-size: 1.2rem;
+    }
+
+    .tabs-content a {
+        height: 500px;
+    }
+
+
+    .tabs-content img {
+        height: 500px;
+        padding: 0 30px;
+    }
+
+
+    .separate {
+        height: 350px;
+    }
+
+    .separate span {
+        width: 50%;
+    }
+
+    #language h6 {
+        padding-bottom: 40px;
+    }
+
+
+
+    /*footer*/
+    .outside #outside-portfolio ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .outside #outside-portfolio ul li {
+        margin-right: 60px;
+    }
+
+    .outside #outside-portfolio ul li:last-child {
+        margin: 0;
+    }
+
+    .outside #logo ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .outside #logo ul li {
+        margin-right: 60px;
+    }
+
+    .outside #logo ul li:last-child {
+        margin: 0;
+    }
+}
+
+@media (min-width :1000px) {
+
+    /*ヘッダー*/
+    .navbar-brand {
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+
+    .navbar-nav .nav-item {
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+
+    /*wrapper*/
+
+    .main img {
+        height: 800px;
+    }
+
+    .fence {
+        height: 700px;
+        width: 80%;
+        margin: 100px auto 150px;
+    }
+
+
+    .fence .img1,
+    .fence .img3 {
+        height: 450px;
+    }
+
+    .fence .img2,
+    .fence .img4 {
+        height: 400px;
+        top: 300px;
+    }
+
+
+    .intro-page {
+        max-width: 1400px;
+    }
+
+    .tabs-content section {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .tabs-content div {
+        width: 36%;
+        padding-top: 20px;
+    }
+
+    .tabs-content .page3 {
+        margin: 30px 0px 30px 15px;
+    }
+
+    .tabs-content a {
+        width: 60%;
+        height: 660px;
+    }
+
+    .tabs-content img {
+        height: 600px;
+        padding-left: 0;
+    }
+
+    .tabs-content div p {
+        font-size: 1.2rem;
+    }
+
+    .separate {
+        height: 400px;
+    }
+
+    .separate h6 {
+        font-size: 1.75rem;
+    }
+
+    .separate ul li {
+        padding-bottom: 10px;
+        font-size: 1.5rem;
+    }
+
+    #api li {
+        padding-top: 40px;
+    }
+
+    #skill li {
+        padding-top: 20px;
+    }
+
+
+    /*フッター*/
+    .global ul li {
+        margin-right: 40px;
+    }
+
+    .global ul li+li::before {
+        padding-right: 40px;
+    }
+
+    .outside {
+        display: flex;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .outside .list {
+        text-align: center;
+        margin: 0;
+        margin-right: 150px;
+    }
+
+    .outside .list:last-child {
+        margin: 0;
+    }
+
+    .outside .list h5 {
+        padding: 5px 10px;
+        border-top: none;
+        border-left: 10px solid #4AA300;
+        margin: 0 0 30px 0;
+    }
+
+    .outside .list ul {
+        display: block;
+    }
+
+    .outside .list li {
+        padding-bottom: 30px;
+        font-size: 1rem;
+    }
+
+    .outside .list li:first-child {
+        padding-top: 20px;
+    }
+
+    .outside #logo ul {
+        display: block;
+    }
+
+    .outside #logo ul li {
+        margin-right: 0;
+        padding-left: 20px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .outside #outside-portfolio ul {
+        display: block;
+        justify-content: center;
+    }
+
+    .outside #outside-portfolio ul li {
+        margin-right: 0;
+    }
+}
+
+@media (min-width :1300px) {
+    .main img {
+        height: 900px;
+    }
+
+    .nav-item {
+        padding-left: 30px;
+    }
+
+    /*-----wrapper-------*/
+    .main img {
+        height: 800px;
+    }
+
+    .background-exp {
+        width: 80%;
+    }
+
+    .fence {
+        height: 850px;
+    }
+
+
+    .fence .img1,
+    .fence .img3 {
+        height: 550px;
+    }
+
+    .fence .img2,
+    .fence .img4 {
+        height: 500px;
+        top: 350px;
+    }
+
+    .tabs-content a {
+        height: 710px;
+    }
+
+    .tabs-content img {
+        height: 650px;
+    }
+
+    .skill-exp {
+        width: 80%;
+    }
+
+    .separate {
+        width: 55%;
+        height: 450px;
+    }
+
+    .separate h6 {
+        padding: 60px 50px;
+    }
+}
+
+@media (min-width :1500px) {
+    .nav-item {
+        padding-left: 60px;
+    }
+
+    /*wrapper*/
+    .main img {
+        height: 850px;
+    }
+
+    .fence {
+        height: 900px;
+    }
+
+
+    .fence .img1,
+    .fence .img3 {
+        height: 600px;
+    }
+
+    .fence .img2,
+    .fence .img4 {
+        height: 550px;
+        top: 350px;
+    }
+
+    .skill-exp {
+        width: 90%;
+        max-width: 2000px;
+        display: flex;
+    }
+
+    .separate {
+        height: 350px;
+        margin-right: 40px;
+    }
+
+    .separate:last-child {
+        margin-right: 0;
+    }
+
+    .separate h6 {
+        font-size: 1.5rem;
+    }
+
+    .separate ul li {
+        padding-bottom: 0;
+        font-size: 1.25rem;
+    }
+
+    #api li {
+        padding-top: 20px;
+    }
+
+    .separate h6 {
+        padding: 40px 0 20px;
+    }
+
+    /*footer*/
+    .outside .list {
+        margin-right: 200px;
+    }
+}

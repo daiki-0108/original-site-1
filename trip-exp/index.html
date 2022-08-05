@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hyogo trip</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="../animate.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="exp.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><span><img src="../image/logo/hyogo.png" alt="兵庫ロゴ"></span>兵庫県観光マップ</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">サイト説明</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../trip-spot/index.html">観光スポット</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../trip-plan/index.html">プラン作成</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+        <div class="main">
+            <img src="../image/exp/main.jpg">
+        </div>
+
+        <div class="background ">
+            <h5 class="in">兵庫の魅力を<br>多くの人に<br>知ってもらいたい</h5>
+            <div class="background-exp in">
+                <div>私がこのサイトを作ろうと思ったきっかけは、大学の友人の一言でした。
+                    <p>「兵庫県はあんまり面白そうなところ無いし、旅行では行かんかな。」</p>
+                    <p>私は兵庫県出身のため、この言葉を聞いた時にとても驚きました。それと同時に、とても勿体ないと感じました。なぜなら兵庫県には素晴らしい場所がたくさんあるからです。</p>
+                    <p>そのため、私は兵庫県の観光サイトを作成し、多くの人に兵庫県の素晴らしさを届けたいと考えました。</p>
+                </div>
+            </div>
+
+            <p class="fence">
+                <span><img class="img1 left" src="../image/exp/img1.jpg"></span>
+                <span><img class="img2 right" src="../image/exp/img2.jpg"></span>
+            </p>
+
+            <div class="background">
+                <h5 class="in">サイトを制作<br>するにあたって</h5>
+                <div class="background-exp in">
+                    <p>実際に現在公開されている観光サイトを見ると、よくあるのが「○○市の観光スポットランキング」や、「○○市の観光スポット10選」です。</p>
+                    <p>私は旅行が好きで、よく旅行プランを考える際にはこのようなサイトを利用し、行先を調べることがあるのですが、そのたびに不便だと感じることが良くありました。<br>それは、「紹介されている観光地の位置関係が、分かりにくい」という点です。
+                    </p>
+                    <p>観光プランを考える際に、地点から地点までの距離や所要時間などをほとんどの人が考えると思います。しかし、現在公開されている観光サイトの多くは、住所が文字で表示されているだけのものが多く、観光スポットごとの位置関係が視覚的に理解しづらいという問題点がありました。
+                    </p>
+                    <p>そのため、私は兵庫県の観光スポットを紹介するとともに、それぞれの位置関係を Google Maps APIを利用して視覚的に表現し、旅行プランを作成することができるサイトを作成しました。</p>
+                </div>
+            </div>
+
+            <p class="fence">
+                <span><img class="img3 right" src="../image/exp/img3.jpg"></span>
+                <span><img class="img4 left" src="../image/exp/img4.jpg"></span>
+            </p>
+
+            <div class="outline">
+                <h5 class="in">サイトの紹介</h5>
+                <div class="intro-page">
+                    <ul class="tabs-menu">
+                        <li><a href="#tabs-1">観光スポット</a></li>
+                        <li><a href="#tabs-2">スポット紹介</a></li>
+                        <li><a href="#tabs-3">旅行プラン作成</a></li>
+                    </ul>
+                    <section class="tabs-content">
+                        <section id="tabs-1">
+                            <a href="../trip-spot/index.html"><img class="in" src="../image/exp/exp-spot.jpg"></a>
+                            <div class="page1 in">
+                                <p>　各観光スポット紹介ページと、旅行プラン作成ページへとつながる、起点となるページです。</p>
+                                <p>　このページからでも、それぞれの観光スポットの雰囲気が分かるようにcardのようなデザインにいたしました。</p>
+                            </div>
+                        </section>
+                        <section id="tabs-2">
+                            <a href="../trip-spot/spots-intr/html/kobe-harborland.html"><img class="in"
+                                    src="../image/exp/exp-info.jpg"></a>
+                            <div class="page2 in">
+                                <p>　それぞれの観光スポットについての情報を提供いたします。</p>
+                                <p>　位置や料金、お問い合わせなどの基礎情報だけでなく、そのスポットの楽しみ方や、おすすめポイントなどの情報も記載しています。</p>
+                                <p>　その他にも、近くにあるおすすめの観光スポットについても記載しています。</p>
+                            </div>
+                        </section>
+                        <section id="tabs-3">
+                            <a href="../trip-plan/index.html"><img class="in" src="../image/exp/exp-plan.jpg"></a>
+                            <div class="page3 in">
+                                <p>　三つのサイトの中で、機能面において最もこだわったページです。実際に紹介したスポットの中から、お好みの旅行プランを作成していただけます。 <br>
+                                    　このサイトを作成するうえで私が特に意識したことは、「ユーザーが利用する際に、いかに簡単に旅行プランを地図に表示させられるか」です。<br>
+                                    　現在すでにWebサイトに公開されている旅行プランを作成できるサイトの特徴として、ユーザーがスポットを自分で検索して、訪れる順番に一つ一つ追加していくものが多いという事が分かりました。しかしこれらのサイトでは、プランを作成するまでに時間がかかるのと、訪れる順番を変える際に少し操作が面倒に感じてしまうという問題点があると感じました。<br>
+                                    　そのため私は、スポットの候補をあらかじめリストに表示しておき、ユーザーはそれらの候補から訪れるスポットを選び、自分が訪れたい順番にただスライドするだけでプランを作成できるようなサイトを作成いたしました。<br>
+                                    　地図と経路の表示、距離と時間のデータの取得はGoogle Maps
+                                    APIを利用しました。スポットの選択や経路の並び替えを簡単にするために、sortable.jsのライブラリを利用しました。<br>
+                                    Google Maps
+                                    APIの地点の位置情報データを、おすすめスポットリストのそれぞれのスポットと結びつけることに苦戦しましたが、Vueのdataプロパティであらかじめ緯度と経度を設定することで解決いたしました。
+                                </p>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+
+            <div class="used-skill">
+                <h5 class="in">使用技術</h5>
+                <div class="skill-exp">
+                    <div id="language" class="separate up">
+                        <h6>使用言語</h6>
+                        <ul>
+                            <span><img src="../image/about-me/skill/html.jpg">
+                                <li>HTML5</li>
+                            </span>
+                            <span><img src="../image/about-me/skill/css.jpg">
+                                <li>CSS3</li>
+                            </span>
+                            <span><img src="../image/about-me/skill/Javascript.jpg">
+                                <li>JavaScript</li>
+                            </span>
+                        </ul>
+                    </div>
+                    <div id="framework" class="separate up">
+                        <h6>ライブラリ・FW</h6>
+                        <ul>
+                            <span><img src="../image/about-me/skill/bootstrap.png">
+                                <li>Bootstrap</li>
+                            </span>
+                            <span><img src="../image/about-me/skill/jquery.png">
+                                <li>jQuery</li>
+                            </span>
+                            <span><img src="../image/about-me/skill/Vue.jpg">
+                                <li>Vue.js</li>
+                            </span>
+                            <span><img src="../image/about-me/skill/sortable.jpg">
+                                <li>sortable.js</li>
+                            </span>
+                        </ul>
+                    </div>
+                    <div id="api" class="separate up">
+                        <h6>Web API</h6>
+                        <ul>
+                            <img src="../image/about-me/skill/google-map.png">
+                            <li>Google Maps API</li>
+                        </ul>
+                    </div>
+                    <div id="skill" class="separate up">
+                        <h6>その他</h6>
+                        <ul>
+                            <img src="../image/about-me/skill/responsive.png">
+                            <li>レスポンシブデザイン</li>
+                            <img src="../image/about-me/skill/photoshop.png">
+                            <li>PhotoShop</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <a class="navbar-brand" href="#"><span><img src="../image/logo/hyogo.png" alt="兵庫ロゴ"></span>兵庫県観光マップ</a>
+        <nav class="global">
+            <ul>
+                <li><a class="active" aria-current="page" href="#">サイト説明</a></li>
+                <li><a href="../trip-spot/index.html">観光スポット</a></li>
+                <li><a href="../trip-plan/index.html">プラン作成</a></li>
+            </ul>
+        </nav>
+
+        <div class="outside">
+            <nav class="list" id="outside-portfolio">
+                <h5>ポートフォリオ</h5>
+                <ul>
+                    <li><a href="../about-me/index.html">About Me</a></li>
+                </ul>
+            </nav>
+
+            <nav class="list">
+                <h5>大学での成果物</h5>
+                <ul>
+                    <li><a href="../about-me/index.html">ArcGIS</a></li>
+                </ul>
+            </nav>
+            <nav class="list" id="logo">
+                <h5>お問い合わせ</h5>
+                <ul>
+                    <li><img src="../image/logo/gmail.png">　：daik.m.20020108@gmail.com</li>
+                    <li>
+                        <a href="https://twitter.com/messages/compose?recipient_id=1531623954657742849&ref_src=twsrc%5Etfw"
+                            class="twitter-dm-button" data-screen-name="daiki_20020108" data-show-count="false">
+                            <img src="../image/logo/twitter.png">
+                        </a>　: @daiki_20020108
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copy">
+            <p>&copy; 2022 dai-portfolio</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- waypoints -->
+    <script src="../jquery.waypoints.min.js"></script>
+
+    <!--bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="exp.js"></script>
+</body>
+
+</html>
